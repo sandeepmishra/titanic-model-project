@@ -1,0 +1,41 @@
+mac os setup
+
+pwd (present working directory)
+
+python -m venv <YOUR-PATH>\venv
+
+python -m venv path of project folder\venv
+ . venv/bin/activate
+
+cd requirements
+pip install -r requirements.txt
+cd titanic_model
+python3 train_pipeline.py
+python3 predict.py
+
+
+
+
+1. Upload the Project folder in VS code
+2. Inside Project create virtual environment :
+A. Open terminal, it should point to .......\projects>
+B. For creating virtual environment run the following command :
+python -m venv path of project folder\venv
+For example:
+....\project> python -m venv C:\Users\karna\Desktop\MLOps_M3_M4\project\venv
+C. Go inside venv\Scripts by command : ....> cd venv\Scripts
+Now type activate and enter : .... project\venv\Scripts> activate
+D. Now press : ctrl +shift+p; select Interpreter which contains venv
+Close the terminal and open new terminal, we are inside ven like this:
+(venv) ......................................\project>
+3. Go inside requirements[cd requirements] folder and run :
+...> pip install -r requirements.txt
+4. Come out of requirements folder [cd..] and go inside titanic_model folder and run :
+py train_pipeline.py
+
+5. Now run : py predict.py
+
+
+Step 8: Build a package for the application: (1 point)
+8.1 Install the “build” library by running the "pip install" command.
+8.2 Run the "python3 -m build" command to create distributable files (.tar, .whl, etc).
